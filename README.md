@@ -5,8 +5,18 @@
 <p>Descrição do primeiro Lab: <strong>Este laboratório contém uma vulnerabilidade simples de script entre sites refletida na funcionalidade de pesquisa.
 Para resolver o laboratório, execute um ataque de script entre sites que chame a função alert().</strong></p>
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
 <p><strong>Passo 1:</strong> vamos testar o sistema colocando um 'teste', pra ver como o sistema se comporta.</p>
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-1/Lab-1.PNG>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+<strong>Passo 2:</strong> vímos que o "teste" vai para dentro de um `<h1></h1>`, e se tentarmos inserir uma tag ao invés de só "teste"? por exemplo: `<b>teste</b>`. será que funcionaria? vamos ver.
+
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-1/Lab-1%20part2.PNG>
+
+<strong>Passo 3:</strong> conseguimos injetar tags HTML pelo campo de busca, agora podemos tentar injetar javascript. por exemplo: `<script>alert('teste')</script>`, vamos ver se funciona.
 
 
