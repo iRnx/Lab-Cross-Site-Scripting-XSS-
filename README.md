@@ -2,12 +2,12 @@
 <h2>Lab: PortSwigger</h2>
 
 <p><strong>Laboratório 1:</strong> XSS refletido no contexto HTML sem nada codificado</p>
-<p>Descrição do primeiro Lab: <strong>Este laboratório contém uma vulnerabilidade simples de script entre sites refletida na funcionalidade de pesquisa.
-Para resolver o laboratório, execute um ataque de script entre sites que chame a função alert().</strong></p>
+<strong>Descrição do primeiro Lab:</strong> Este laboratório contém uma vulnerabilidade simples de script entre sites refletida na funcionalidade de pesquisa.
+Para resolver o laboratório, execute um ataque de script entre sites que chame a função alert().
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-<p><strong>Passo 1:</strong> vamos testar o sistema colocando um 'teste', pra ver como o sistema se comporta.</p>
+<strong>Passo 1:</strong> vamos testar o sistema colocando um 'teste', pra ver como o sistema se comporta.
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-1/Lab-1.PNG>
 
@@ -19,4 +19,8 @@ Para resolver o laboratório, execute um ataque de script entre sites que chame 
 
 <strong>Passo 3:</strong> conseguimos injetar tags HTML pelo campo de busca, agora podemos tentar injetar javascript. por exemplo: `<script>alert('teste')</script>`, vamos ver se funciona.
 
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-1/Lab-1%20part3.PNG>
 
+Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congratulations, you solved the lab!" dizendo que resolvemos o lab =)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
