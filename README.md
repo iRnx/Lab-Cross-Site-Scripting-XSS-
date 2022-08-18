@@ -1,4 +1,4 @@
-# Lab-Cross-Site-Scripting-XSS-
+# Cross-Site-Scripting-XSS
 <h2>Lab: PortSwigger</h2>
 
 <p><strong>Laboratório 1:</strong> XSS refletido no contexto HTML sem nada codificado</p>
