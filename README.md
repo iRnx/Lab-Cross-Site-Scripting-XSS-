@@ -31,9 +31,12 @@ Para resolver este laboratório, envie um comentário que chame a função alert
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-<strong>Passo 1:</strong>
+<strong>Passo 1:</strong> Vamos até a parte que fica os comentarios de cada post. chegando lá, vamos testar um HTML injection `<b>teste</b>`, e enviar.
+como podemos ver na imagem abaixo, nosso comentário ficou em negrito, e criou uma tag dentro do parágrafo como podemos ver no devtools.
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-2/Lab-2.PNG>
+
+<strong>Passo 2:</strong> 
 
 
 
