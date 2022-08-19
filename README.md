@@ -24,3 +24,6 @@ Para resolver o laboratório, execute um ataque de script entre sites que chame 
 Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congratulations, you solved the lab!" dizendo que resolvemos o lab =)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
+
+<p><strong>Laboratório 2:</strong> XSS armazenado em contexto HTML sem nada codificado</p>
+
