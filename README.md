@@ -29,3 +29,17 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 <strong>Descrição do segundo lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites armazenada na funcionalidade de comentários.
 Para resolver este laboratório, envie um comentário que chame a função alert() quando a postagem do blog for visualizada.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+<strong>Passo 1:</strong>
+
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-2/Lab-2.PNG>
+
+
+
+
+
+
+
+
+
