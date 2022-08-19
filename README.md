@@ -26,4 +26,6 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
 <p><strong>Laboratório 2:</strong> XSS armazenado em contexto HTML sem nada codificado</p>
+<strong>Descrição do segundo lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites armazenada na funcionalidade de comentários.
+Para resolver este laboratório, envie um comentário que chame a função alert() quando a postagem do blog for visualizada.
 
