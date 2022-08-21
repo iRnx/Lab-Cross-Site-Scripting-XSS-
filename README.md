@@ -43,6 +43,14 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
+<p><strong>Laboratório 3:</strong> DOM XSS no document.write coletor usando a fonte location.search</p>
+
+<p><strong>Descrição do Terceiro lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites baseada em DOM na funcionalidade de rastreamento de consulta de pesquisa. Ele usa a função document.write JavaScript, que grava dados na página. A função document.write é chamada com dados de location.search, que você pode controlar usando a URL do site. Para resolver este laboratório, execute um ataque de script entre sites que chame a função alert().<p>
+
+
+
+
+
 
 
 
