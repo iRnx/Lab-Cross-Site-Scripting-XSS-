@@ -36,7 +36,7 @@ como podemos ver na imagem abaixo, nosso comentário ficou em negrito, e criou u
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-2/Lab-2.PNG>
 
-<strong>Passo 2:</strong> agora vamos tentar injetar javaScript, primeiro escreve algo aleatório sobre o post meu exemplo foi: "Muitooo bom esse Post !!",
+<strong>Passo 2:</strong> agora vamos tentar injetar javaScript, primeiro escreva algo aleatório sobre o post meu exemplo foi: "Muitooo bom esse Post !!",
 em seguida injeta um script `<script>alert('Deu Certooo')</script>`, como podemos ver no DevTools, nosso comentário aparece normal, porém ele é acompanhado de um script.
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-2/Lab-2-part-2.PNG>
