@@ -47,6 +47,10 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 
 <p><strong>Descrição do Terceiro lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites baseada em DOM na funcionalidade de rastreamento de consulta de pesquisa. Ele usa a função document.write JavaScript, que grava dados na página. A função document.write é chamada com dados de location.search, que você pode controlar usando a URL do site. Para resolver este laboratório, execute um ataque de script entre sites que chame a função alert().<p>
 
+<strong>Passo 1:</strong> vamos escrever `teste` e ver pra onde ele vai, como podemos ver na imagem abaixo, nosso "teste" foi para uma tag `<img>`.
+
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-3/Lab-3-part1.PNG>
+
 
 
 
