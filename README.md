@@ -51,14 +51,16 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-3/Lab-3-part1.PNG>
 
-<strong>Passo 2:</strong> O que devemos fazer agora, é tentar escapar o teste. e para fazer isso nós usamos aspas duplas `"` pra fechar o atributo src. e em seguida fechamos a tag img `>`. e nosso código pra poder escapar o "teste" ficou assim: `">teste`. e com isso nós conseguimos pular fora da tag img e inserir tags na página.  
+<strong>Passo 2:</strong> O que devemos fazer agora, é tentar escapar o teste. e para fazer isso nós usamos aspas duplas `"` pra fechar o atributo src. e em seguida fechamos a tag img `>`. e nosso código pra poder escapar o "teste" ficou assim: `">teste`. e com isso nós conseguimos pular fora da tag img e inserir tags ou textos na página.
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-3/Lab-3-part2.PNG>
   
-<strong>Passo 3:</strong> vamos injetar uma tag em HTML e, dentro dessa tag HTML, vamos passar um atributo para disparar um alert(1), `"><img src=x onerror=alert(1)>`,
+<strong>Passo 3:</strong>Como podemos ver, pra onde nosso "teste" estava indo, ficou vazio.  vamos injetar uma tag em HTML e, dentro dessa tag HTML, vamos passar um atributo para disparar um alert(1), `"><img src=x onerror=alert(1)>`,
 vamos criar essa tag de imagem que vai tentar carregar um "x" porém não existe esse caminho para imagem e vai dar erro. aí que entra o "onerror", caso não consiga carregar uma imagem, dispare um alert(1).
   
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-3/Lab-3-part3.PNG>
+  
+Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congratulations, you solved the lab!" dizendo que resolvemos o lab =)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
