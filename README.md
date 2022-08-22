@@ -77,9 +77,13 @@ Para resolver este laboratório, execute um ataque de script entre sites que cha
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-4/Lab-4-part2.PNG>
 
-<strong>Passo 3:</strong>
+<strong>Passo 3:</strong> Sabendo que dentro do &#60;span&#62; tem um HTML injection, nós podemos inserir uma tag HTML com um atributo que executa um javaScript ao carregar a página, como por exemplo: `<svg onload=alert(1)>`, quando a página carregar irá disparar um alert(1), por conta do onload.
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-4/Lab-4-part3.PNG>
+
+Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congratulations, you solved the lab!" dizendo que resolvemos o lab =)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
