@@ -77,6 +77,10 @@ Para resolver este laboratório, execute um ataque de script entre sites que cha
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-4/Lab-4-part2.PNG>
 
+<strong>Passo 3:</strong>
+
+<img src=>
+
 
 
 
