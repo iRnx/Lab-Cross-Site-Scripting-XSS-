@@ -3,7 +3,7 @@
 
 <p><strong>Laboratório 1:</strong> XSS refletido no contexto HTML sem nada codificado</p>
 
-<p><strong>Descrição do primeiro Lab:</strong> Este laboratório contém uma vulnerabilidade simples de script entre sites refletida na funcionalidade de pesquisa.
+<p><strong>Descrição do 1º Lab:</strong> Este laboratório contém uma vulnerabilidade simples de script entre sites refletida na funcionalidade de pesquisa.
 Para resolver o laboratório, execute um ataque de script entre sites que chame a função alert().</p>
 
 <strong>Passo 1:</strong> vamos testar o sistema colocando um 'teste', pra ver como o sistema se comporta.
@@ -25,7 +25,7 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 
 <p><strong>Laboratório 2:</strong> XSS Stored em contexto HTML sem nada codificado</p>
 
-<p><strong>Descrição do segundo lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites armazenada na funcionalidade de comentários.
+<p><strong>Descrição do 2º lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites armazenada na funcionalidade de comentários.
 Para resolver este laboratório, envie um comentário que chame a função alert() quando a postagem do blog for visualizada.</p>
 
 
@@ -45,7 +45,7 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 
 <p><strong>Laboratório 3:</strong> DOM XSS no document.write coletor usando a fonte location.search</p>
 
-<p><strong>Descrição do Terceiro lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites baseada em DOM na funcionalidade de rastreamento de consulta de pesquisa. Ele usa a função document.write JavaScript, que grava dados na página. A função document.write é chamada com dados de location.search, que você pode controlar usando a URL do site. Para resolver este laboratório, execute um ataque de script entre sites que chame a função alert().<p>
+<p><strong>Descrição do 3º lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites baseada em DOM na funcionalidade de rastreamento de consulta de pesquisa. Ele usa a função document.write JavaScript, que grava dados na página. A função document.write é chamada com dados de location.search, que você pode controlar usando a URL do site. Para resolver este laboratório, execute um ataque de script entre sites que chame a função alert().<p>
 
 <strong>Passo 1:</strong> vamos escrever `teste` e ver pra onde ele vai, como podemos ver na imagem abaixo, nosso "teste" foi para uma tag `<img>`.
 
@@ -64,6 +64,18 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
+<p><strong>Laboratório 4:</strong> DOM XSS no innerHTML coletor usando a fonte location.search</p>
+
+<p><strong>Descrição do 4º Lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites baseada em DOM na funcionalidade de blog de pesquisa. Ele usa uma innerHTML atribuição, que altera o conteúdo HTML de um elemento div, usando dados de location.search.
+Para resolver este laboratório, execute um ataque de script entre sites que chame a função alert().</p>
+
+<strong>Passo 1:</strong> Vamos por "teste" no input e ver para onde ele vai.
+
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-4/Lab-4-part1.PNG>
+
+<strong>Passo 2:</strong>
+
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-4/Lab-4-part2.PNG>
 
 
 
