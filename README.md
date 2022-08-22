@@ -73,7 +73,7 @@ Para resolver este laboratório, execute um ataque de script entre sites que cha
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-4/Lab-4-part1.PNG>
 
-<strong>Passo 2:</strong>
+<strong>Passo 2:</strong> Sabendo que nosso teste vai para dentro de uma tag &#60;span&#62;, poderíamos tentar injetar tags ali dentro, como por exemplo `<b>teste</b>`, essa tag é apenas para deixar em negrito nosso "teste".
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-4/Lab-4-part2.PNG>
 
