@@ -94,7 +94,7 @@ Para resolver este laboratório, faça o alerta de link "voltar" document.cookie
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-5/Lab-5-part1.PNG>
 
-<strong>Passo 2:</strong>
+<strong>Passo 2:</strong> Vamos começar pela url injetando `javascript:alert(document.cookie)` e aperte enter, depois disso podemos ver que agora o link do "back" esta sendo redirecionado para "javascript:alert(document.cookie)", agora abra o devtools e vamos dar uma olhada no codigo jquery, se você notar ele esta pegando tudo que vem do parâmetro "returnPath" e não tem tratamento nenhum, possibilitando a injeção de scripts, neste caso conseguimos um xss dentro de um href, quando clicarmos no "back", irá disparar um alerta contendo o cookie.
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-5/Lab-5-part2.PNG>
 
