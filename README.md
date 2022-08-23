@@ -96,7 +96,7 @@ Para resolver este laboratório, faça o alerta de link "voltar" document.cookie
 
 <strong>Passo 2:</strong>
 
-<img src=>
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-5/Lab-5-part2.PNG>
 
 
 
