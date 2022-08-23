@@ -85,6 +85,29 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
+<p><strong>Laboratório 5:</strong> DOM XSS no coletor de atributo âncora do jQuery usando fonte location.search</p>
+
+<p><strong>Descrição do 5º Lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites baseada em DOM na página de envio de comentários. Ele usa a função seletora da biblioteca jQuery $ para encontrar um elemento âncora e altera seu atributo href usando dados de arquivos location.search.
+Para resolver este laboratório, faça o alerta de link "voltar" document.cookie.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
