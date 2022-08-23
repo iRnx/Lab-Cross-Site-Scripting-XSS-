@@ -98,6 +98,10 @@ Para resolver este laboratório, faça o alerta de link "voltar" document.cookie
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-5/Lab-5-part2.PNG>
 
+Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congratulations, you solved the lab!" dizendo que resolvemos o lab =)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
