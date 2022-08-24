@@ -67,7 +67,7 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 <p><strong>Laboratório 4:</strong> DOM XSS no innerHTML coletor usando a fonte location.search</p>
 
 <p><strong>Descrição do 4º Lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites baseada em DOM na funcionalidade de blog de pesquisa. Ele usa uma innerHTML atribuição, que altera o conteúdo HTML de um elemento div, usando dados de location.search.
-Para resolver este laboratório, execute um ataque de script entre sites que chame a função alert().</p>
+Para resolver este laboratório, execute um ataque de script entre sites que chame a função alert.</p>
 
 <strong>Passo 1:</strong> Vamos por "teste" no input e ver para onde ele vai.
 
