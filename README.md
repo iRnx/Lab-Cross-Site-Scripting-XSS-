@@ -107,6 +107,12 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 <p><strong>Descrição do 6º Lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites baseada em DOM na página inicial. Ele usa a $()função seletora do jQuery para rolar automaticamente para um determinado post, cujo título é passado através da location.hashpropriedade.
 Para resolver o laboratório, entregue um exploit para a vítima que chama a print()função em seu navegador.</p>
 
+<strong>Passo 1:</strong> Esse lab tem uma funcionalidade que quando nós digitamos na url o título de algum Post a página vai direto para esse post.
+
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-6/Lab-6-part1.PNG>
+
+<strong>Passo 2:</strong>
+
 <img src=x>
 
 
