@@ -141,6 +141,24 @@ nesta parte: "$(window).on('hashchange', function(){" esta falando que quando ho
 
 calma que vou explicar cada pedacinho desse exploit.
 
+vamos começar pelo: `<iframe></iframe>`, O elemento HTML <iframe> (ou elemento HTML inline frame) representa um contexto de navegação aninhado, efetivamente incorporando outra página HTML para a página atual. Em HTML 4.01, um documento pode conter uma cabeça e um corpo ou uma cabeça e um conjunto de quadros, mas não tanto um corpo e um conjunto de quadros.
+
+ou seja, o <iframe> tem o poder de incorporar outras coisas, por exemplo, um video do youtube, só copiar e colar na sua pagina html e pronto!! você terá o video.
+  
+exemplo:
+  
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-6/Lab-6-part4.png>
+  
+Código copiado do iframe do youtube: 
+<iframe width="545" height="409" src="https://www.youtube.com/embed/nmjdaBaZe8Y" title="Chris Brown - With You (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+  
+
+
+
+
+
 
 
 
