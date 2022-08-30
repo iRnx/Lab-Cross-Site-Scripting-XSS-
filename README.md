@@ -150,7 +150,14 @@ exemplo:
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-6/Lab-6-part4.png>
   
 Código copiado do iframe do youtube: 
-<iframe width="545" height="409" src="https://www.youtube.com/embed/nmjdaBaZe8Y" title="Chris Brown - With You (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><iframe width="545" height="409" src="https://www.youtube.com/embed/nmjdaBaZe8Y" title="Chris Brown - With You (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  
+Agora vocês já sabem como funciona o iframe, `<iframe src="link" ></iframe>` o src é para carregar alguma pagina que voce queira, geralmente seria o link da pagina que a vitíma iria acessar.
+
+`<iframe src="https://www.link.com/#1533">` o jogo da velha seria a nossa hash e o numero é a nossa pesquisa como fizemos antes.
+
+`<iframe src="https://www.link.com/#1533" onload="this.src+=<'img src=x onerror=print()>'"></iframe>` quando carregar a pagina, executará o evento onload, que está falando, que quando ele carregar o src da pagina irá receber o nosso código malicioso, e ficaria assim para a vitima: `<iframe src="https://0a4400f603e92417c05480600063003a.web-security-academy.net/#1533onload="this.src+='<img src=x onerror=print()>'"/>` 
+
 
 
   
