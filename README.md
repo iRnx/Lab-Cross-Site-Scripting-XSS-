@@ -111,9 +111,17 @@ Para resolver o laboratório, entregue um exploit para a vítima que chama a pri
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-6/Lab-6-part1.PNG>
 
-<strong>Passo 2:</strong>
+<strong>Passo 2:</strong> agora vamos digitar algo na frente da hash (que seria aquele jogo da velha), no meu exemplo eu digitei `#1533` e não aconteceu nada, analisando o código nós conseguimos ver que existe um evento chamado "hashchange", ou seja, sempre que a hash(#) mudar o valor dela, uma funçao anônima será chamada.
 
-<img src=x>
+                         <pre>$(window).on('hashchange', function(){ 
+                            var post = $('section.blog-list h2:contains(' + decodeURIComponent(window.location.hash.slice(1)) + ')');
+                            if (post) post.get(0).scrollIntoView();
+                        });</pre>
+                        
+"section.blog-list h2:contains" essa parte do código irá pegar todos os h2 que contém o título dos posts do blog, "decodeURIComponent(window.location.hash.slice(1))" ja essa parte do código, é para pegar o que nós escrevemos na url. agora nós temos uma pequena verificação: "if (post) post.get(0).scrollIntoView();" se o que digitamos na url for exatamente igual a essa parte: "section.blog-list h2:contains" (que seria os títulos do blog), a verificação se torna verdadeira e o scroll é executado para rolar onde o existir o nome do titulo. 
+                    
+
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-6/Lab-6part2.PNG>
 
 
 
