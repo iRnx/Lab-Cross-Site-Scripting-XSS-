@@ -102,7 +102,12 @@ Deu tudo certoooo!! disparamos um alerta e depois recebemos essa mensagem "Congr
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
+<p><strong>Laboratório 6:</strong> DOM XSS no coletor seletor do jQuery usando um evento hashchange</p>
 
+<p><strong>Descrição do 6º Lab:</strong> Este laboratório contém uma vulnerabilidade de script entre sites baseada em DOM na página inicial. Ele usa a $()função seletora do jQuery para rolar automaticamente para um determinado post, cujo título é passado através da location.hashpropriedade.
+Para resolver o laboratório, entregue um exploit para a vítima que chama a print()função em seu navegador.</p>
+
+<img src=x>
 
 
 
