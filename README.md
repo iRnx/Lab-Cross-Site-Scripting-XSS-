@@ -125,7 +125,7 @@ Para resolver o laboratório, entregue um exploit para a vítima que chama a pri
 
 <strong>Passo 3:</strong> Como podemos ver na imagem anterior, digitamos "1533" e nada aconteceu!! e se colocarmos uma tag html ??? será que da bom? até porque como vimos no código não existe filtragem nenhuma do que esta vindo da url. Digite na url `<img src=x onerror=print()>`, e como você pode ver deu certo!! porém ainda não resolvemos este lab.
 
-<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/tree/main/imagens/Lab-6>
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-6/Lab-6-part3.PNG>
 
 
 
