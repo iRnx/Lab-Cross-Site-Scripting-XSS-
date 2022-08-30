@@ -137,9 +137,20 @@ Para resolver o laboratório, entregue um exploit para a vítima que chama a pri
 
 nesta parte: "$(window).on('hashchange', function(){" esta falando que quando houver uma mudança de "hashchange" a função irá executar. porém se enviarmos para a vítima não vai haver uma mudança de hash, e pra isso vamos ter que escrever um exploit que vai fazer exatamente essa mudança de hash que nós queremos quando a vítima acessar o link malicioso.
 
-`<iframe src="https://0a4400f603e92417c05480600063003a.web-security-academy.net/#1533" onload="this.src+='<img src=x onerror=print()>'"/>`
+<strong>Passo 5:</strong> Basta copiar o seu id de sessão e depois ir em "go to exploit server"
+
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-6/Lab-6-part-5.PNG>
+
+<strong>Passo 6:</strong> Agora basta inserir o exploit no body e entregar para vitima.
+
+<img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-6/Lab-6-part6.PNG>
+
+
+`<iframe src="https://0ad000b204a278efc084b29d003500fb.web-security-academy.net/#1533" onload="this.src+='<img src=x onerror=print()>'"/>`
 
 calma que vou explicar cada pedacinho desse exploit.
+
+<h4>Explicação sobre o exploit</h4>
 
 vamos começar pelo: `<iframe></iframe>`, O elemento HTML <iframe> (ou elemento HTML inline frame) representa um contexto de navegação aninhado, efetivamente incorporando outra página HTML para a página atual. Em HTML 4.01, um documento pode conter uma cabeça e um corpo ou uma cabeça e um conjunto de quadros, mas não tanto um corpo e um conjunto de quadros.
 
@@ -148,15 +159,14 @@ ou seja, o <iframe> tem o poder de incorporar outras coisas, por exemplo, um vid
 exemplo:
   
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-6/Lab-6-part4.png>
-  
-Código copiado do iframe do youtube: 
-<p><iframe width="545" height="409" src="https://www.youtube.com/embed/nmjdaBaZe8Y" title="Chris Brown - With You (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+   
+Código copiado do iframe do youtube:<p><iframe width="545" height="409" src="https://www.youtube.com/embed/nmjdaBaZe8Y" title="Chris Brown - With You (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
   
 Agora vocês já sabem como funciona o iframe, `<iframe src="link" ></iframe>` o src é para carregar alguma pagina que voce queira, geralmente seria o link da pagina que a vitíma iria acessar.
 
 `<iframe src="https://www.link.com/#1533">` o jogo da velha seria a nossa hash e o numero é a nossa pesquisa como fizemos antes.
 
-`<iframe src="https://www.link.com/#1533" onload="this.src+=<'img src=x onerror=print()>'"></iframe>` quando carregar a pagina, executará o evento onload, que está falando, que quando ele carregar o src da pagina irá receber o nosso código malicioso, e ficaria assim para a vitima: `<iframe src="https://0a4400f603e92417c05480600063003a.web-security-academy.net/#1533onload="this.src+='<img src=x onerror=print()>'"/>` 
+`<iframe src="https://www.link.com/#1533" onload="this.src+=<'img src=x onerror=print()>'"></iframe>` quando carregar a pagina, executará o evento onload, que está falando, que quando ele carregar o src da pagina irá receber o nosso código malicioso, e ficaria assim para a vitima: `<iframe src="https://0a4400f603e92417c05480600063003a.web-security-academy.net/#1533onload="this.src+='<img src=x onerror=print()>'"/>`
 
 
 
