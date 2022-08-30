@@ -123,6 +123,10 @@ Para resolver o laboratório, entregue um exploit para a vítima que chama a pri
 
 <img src=https://github.com/iRnx/Lab-Cross-Site-Scripting-XSS-/blob/main/imagens/Lab-6/Lab-6part2.PNG>
 
+<strong>Passo 3:</strong> 
+
+<img src=x>
+
 
 
 
